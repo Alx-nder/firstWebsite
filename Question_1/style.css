@@ -1,0 +1,208 @@
+html{
+  width: 100%;  
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar{
+  display: none;
+}
+
+#index1{
+  background-image: linear-gradient(white,#f7f7f7,#d1eaff);
+  height: 100vh;
+}
+
+#index2{
+  color: black;
+  min-height: 100vh;
+
+}
+.nav-item{
+  padding: 8px 14px;
+}
+#action1{
+  color: #ff6754;
+}
+
+#action2{
+  background-color: #ff6754;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 0%;
+  width: 150px;
+  height: 50px;
+}
+
+#action3{
+  background-color: #7292c7;
+  color: white;
+}
+#action4{
+  background-color: #ff6754;
+  color: white;
+}
+#action5{
+  background-color:#5bd6a4 ;
+  color: white;
+}
+
+#index3{
+  background-color: #15243b;
+  min-height: 100vh;
+}
+
+#about1{
+  min-height: 100vh;
+  background-color: #d8d8d8;
+}
+#about2{
+  min-height: 100vh;
+}
+
+.movingGradientMembers{
+  background: linear-gradient(270deg, #212224,#004E74,#017298, #004E74, #212224);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 13s ease infinite;
+  -moz-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
+}
+
+
+.carousel-inner{
+  max-height: 45rem !important;
+}
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+  transition: transform 1.2s ease;
+}
+
+/* Gradient*/
+.movingGradient {
+  background: linear-gradient(270deg, black,#FF4B2B, black);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 13s ease infinite;
+  -moz-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
+}
+
+#signUpPage{
+  display: none;
+}
+
+#signInPage{
+  display: block;
+}
+
+#signPage{
+  background-image: url("images/techbackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#container {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+
+form, input, label, p ,#sl {
+  color: white !important;
+}
+
+#sl, form, input, :disabled, ::placeholder, p {
+  color: white !important;
+}
+#container:before{
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.397);
+  filter: blur(8px);
+  margin: -20px;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  #pic1{
+    display: none;
+  }
+
+  #container{
+    width: 100%!important;
+  }
+
+ }
+
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    #container{
+      width: 50%!important;
+    }
+    
+   
+  }  
+
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    #container{
+      width: 50%!important;
+    }
+    
+ }
+
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+  #action1{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 50px;
+    background-color: rgba(255, 103, 84, .2);
+    }
+ }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) { 
+
+  
+  #action1{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 50px;
+  background-color: rgba(255, 103, 84, .2);
+  }
+}
